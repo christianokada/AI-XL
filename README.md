@@ -5,4 +5,5 @@ AI-XL is a simple machine learning exercise that takes in categorical data from 
 # DEMO
 
 $ pip install openpyxl
+
 $ python dict.py
