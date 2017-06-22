@@ -61,7 +61,7 @@ ws2 = wb2['contest-test']
 
 #Data have different weights based on importance to categories from training set
 
-for row in range(2,ws2.max_row):
+for row in range(2,ws2.max_row+1):
     for cat in catlist:
         if ws2['D'+str(row)].value in office[cat]:
             cd[cat] += 1
