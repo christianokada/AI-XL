@@ -19,12 +19,11 @@ dlist.extend((ids,office,org,carl,fun,title,tt,tloc,cor,vname,confname,ctype,cer
 KEY = '0xFF001234A117'
 TARGET = 'AA'
 
+# Add universal key and char value for each column
 c = 0
 for dic in dlist:
     dic[KEY] = charstr[c]
     c += 1
-    
-# print dlist
 
 wb = load_workbook('contest-train.xlsx') #crack open a cold workbook with the boys
 ws = wb['contest-train']
@@ -46,7 +45,6 @@ for dic in dlist:
         dic[cat]=[]
 
 #############################Populate the dictionaries####################################
-
 
 for row in range(2,ws.max_row+1):
     for dic in dlist:
